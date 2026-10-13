@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Positioning</title>
+     <link rel="stylesheet" href="position.css">
+</head>
+<body>
+     
+     <nav class="navbar">
+          <div class="nav-logo">Kosimonto</div>
+
+          <ul class="nav-links" id="nav-links">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Skills</a></li>
+          </ul>
+          <div class="hamburger" id="hamburger">
+               <span></span>
+               <span></span>
+               <span></span>
+          </div>
+     </nav>
+
+     <div class="container">
+          <div class="profile-card">
+               <span class="status-badge">Online</span>
+               <div class="avatar-wrapper">
+                    <img src="sword.jpg" alt="Profile Picture">
+                    <span class="avatar-badge"></span>
+               </div>
+
+               <h2>Kosimonto_Tech</h2>
+               <p>
+                    Front-end Developer | UI/UX Designer | Tech Enthusiast <br> Imo State, Nigeria
+                    <button>View Profile</button>
+               </p>
+
+          </div>
+     </div>
+
+     <script>
+          const hamburger = document.getElementById("hamburger");
+          const navLinks = document.querySelector(".nav-links");
+
+          hamburger.addEventListener("click", () => {
+               navLinks.classList.toggle("active");
+               hamburger.classList.toggle("active");
+          });
+     </script>
+
+</body>
+</html>
